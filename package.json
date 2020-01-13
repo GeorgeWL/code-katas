@@ -4,11 +4,9 @@
 	"description": "Code Katas, mostly from codewars",
 	"main": "index.ts",
 	"scripts": {
-		"start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
-		"create": "npm run build && npm run test",
-		"build": "tsc -p .",
-		"test": "npx katas-cli",
-		"refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
+		"start": "nodemon --watch",
+		"build": "tsc",
+		"test": "jest"
 	},
 	"keywords": [
 		"kata",
