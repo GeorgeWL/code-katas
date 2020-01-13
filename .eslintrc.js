@@ -13,7 +13,7 @@ module.exports = {
         ecmaVersion: 2018,
         sourceType: 'module'
     },
-    plugins: ['@typescript-eslint'],
+    plugins: ['@typescript-eslint', 'prettier/@typescript-eslint', 'plugin:prettier/recommended'],
     rules: {
         semi: ['error', 'always', { omitLastInOneLineBlock: true }]
     }
