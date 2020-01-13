@@ -47,7 +47,7 @@
 	"lint-staged": {
 		"*.ts": [
 			"prettier --write \"./*.[tj]s\" --config ./.prettierrc.js",
-			"eslint --fix",
+			"eslint --fix --config ./.eslintrc.js",
 			"git add"
 		]
 	}
