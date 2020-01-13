@@ -9,3 +9,4 @@ function hexPartConvert(colorInt: number): string {
     const hexPart: string = colorInt.toString(16).toUpperCase();
     return hexPart.length === 2 ? hexPart : `0${hexPart}`;
 }
+//
