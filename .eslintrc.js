@@ -15,6 +15,7 @@ module.exports = {
     },
     plugins: ['@typescript-eslint', 'eslint-plugin-prettier'],
     rules: {
-        semi: ['error', 'always', { omitLastInOneLineBlock: true }]
+        semi: ['error', 'always', { omitLastInOneLineBlock: true }],
+        indent: ['error', 'tab']
     }
 };
