@@ -1,17 +1,15 @@
 // https://www.codewars.com/kata/513e08acc600c94f01000001
-function rgb(r: number, g: number, b: number): string {
-	// complete this function
-	const hexParts = [hexPartConvert(r), hexPartConvert(g), hexPartConvert(b)];
-	return hexParts.map(part => (part.length !== 1 ? part : `0${part}`)).join('');
+function rgb(r, g, b) {
+	const hexParts = [r, g, b];
+	return hexParts.map(part => hexPartConvert(part)).join('');
 }
 
-function hexPartConvert(colorInt: number = 0): string {
-	if (colorInt > 255) {
-		colorInt = 255;
-	}
-	if (colorInt < 0) {
-		colorInt = 0;
-	}
-	return colorInt.toString(16).toUpperCase(); // honestly, I googled for int to Hex expecting a native fucntion to exist. didn't expect it to be that easy.
+function hexPartConvert(colorInt) {
+	colorInt = colorInt > 255 ? 255 : colorInt < 0 ? 0 : colorInt;
+	const hexPart = colorInt.toString(16).toUpperCase();
+	return hexPart.length === 2 ? hexPart : `0${hexPart}`;
 }
-console.assert;
+console.assert(rgb(0, 0, 0) === '000000', 'FAIL');
+console.assert(rgb(0, 0, -20) === '000000', 'FAIL');
+console.assert(rgb(300, 255, 255) === 'FFFFFF', 'FAIL');
+console.assert(rgb(173, 255, 47) === 'ADFF2F', 'FAIL');
