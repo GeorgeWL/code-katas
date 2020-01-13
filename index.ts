@@ -1,5 +1,5 @@
 import rgb from './hexToRgb';
-import isIsogram from './isogram_check';
+import isIsogram from './isIsogram';
 console.log('will add proper jest tests here later');
 console.assert(rgb(0, 0, 0) === '000000', 'FAIL on 0,0,0');
 console.assert(rgb(0, 0, -20) === '000000', 'FAIL');
