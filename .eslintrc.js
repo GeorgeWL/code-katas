@@ -17,6 +17,7 @@ module.exports = {
 	rules: {
 		semi: ['error', 'always', { omitLastInOneLineBlock: true }],
 		indent: ['error', 'tab'],
-		'no-tabs': ['error', { allowIndentationTabs: true }]
+		'no-tabs': ['error', { allowIndentationTabs: true }],
+		'space-before-function-paren': ['error', { anonymous: 'ignore', named: 'ignore', asyncArrow: 'always' }]
 	}
 };
