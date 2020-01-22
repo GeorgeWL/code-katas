@@ -13,7 +13,7 @@ module.exports = {
 		ecmaVersion: 2018,
 		sourceType: 'module'
 	},
-	plugins: ['@typescript-eslint', 'eslint-plugin-prettier'],
+	plugins: ['@typescript-eslint', 'eslint-plugin-prettier', 'eslint-plugin-jest'],
 	rules: {
 		semi: ['error', 'always', { omitLastInOneLineBlock: true }],
 		indent: ['error', 'tab'],
