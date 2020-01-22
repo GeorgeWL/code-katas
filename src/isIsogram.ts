@@ -6,8 +6,8 @@ export default function isIsogram(word: string): boolean {
 		.sort();
 	let prevLetter: string;
 	return lettersArr
-		.map((letter, index) => {
-			const res = letter === prevLetter && index !== lettersArr.length;
+		.map((letter: string) => {
+			const res = letter !== prevLetter;
 			prevLetter = letter;
 			return res;
 		})
