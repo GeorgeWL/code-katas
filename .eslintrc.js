@@ -19,5 +19,6 @@ module.exports = {
 		indent: ['error', 'tab'],
 		'no-tabs': ['error', { allowIndentationTabs: true }],
 		'space-before-function-paren': ['error', { anonymous: 'ignore', named: 'ignore', asyncArrow: 'always' }]
-	}
+	},
+	ignorePatterns: ['**/config.[jt]s']
 };
