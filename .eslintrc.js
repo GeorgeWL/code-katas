@@ -20,5 +20,5 @@ module.exports = {
 		'no-tabs': ['error', { allowIndentationTabs: true }],
 		'space-before-function-paren': ['error', { anonymous: 'ignore', named: 'ignore', asyncArrow: 'always' }]
 	},
-	ignorePatterns: ['*config.json', '*config.[jt]s']
+	ignorePatterns: ['*config.json', 'tsconfig.json', '*config.[jt]s', '*.test.ts']
 };
