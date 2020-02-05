@@ -4,5 +4,7 @@ module.exports = {
 	printWidth: 120,
 	tabWidth: 4,
 	useTabs: true,
-	arrowParens: 'avoid'
+	arrowParens: 'avoid',
+	noVar: true,
+	preferConst: true
 };
