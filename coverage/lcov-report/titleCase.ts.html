@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for isIsogram.ts</title>
+    <title>Code coverage report for titleCase.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -18,27 +18,27 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> isIsogram.ts</h1>
+        <h1><a href="index.html">All files</a> titleCase.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>7/7</span>
+                <span class='fraction'>10/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">91.67% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>11/12</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
@@ -71,36 +71,39 @@
 <a name='L13'></a><a href='#L13'>13</a>
 <a name='L14'></a><a href='#L14'>14</a>
 <a name='L15'></a><a href='#L15'>15</a>
-<a name='L16'></a><a href='#L16'>16</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-yes">23x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">32x</span>
-<span class="cline-any cline-yes">32x</span>
-<span class="cline-any cline-yes">32x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">28x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// https://www.codewars.com/kata/54ba84be607a92aa900000f1
-export default function isIsogram(word: string): boolean {
-	const lettersArr: string[] = word
-		.toLowerCase()
-		.split('')
-		.sort();
-	let prevLetter: string;
-	return lettersArr
-		.map((letter: string) =&gt; {
-			const res = letter !== prevLetter;
-			prevLetter = letter;
-			return res;
+<span class="cline-any cline-yes">19x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// https://www.codewars.com/kata/5202ef17a402dd033c000009
+export function titleCase(title: string, minorWords?: string): string {
+	const titleArr = title.split(' ');
+	const minorWordsArr = minorWords &amp;&amp; minorWords.split(' ').map(w =&gt; w.toLowerCase());
+	return titleArr
+		.map((word, index) =&gt; {
+			const newWord = word.toLowerCase();
+			return minorWordsArr &amp;&amp; minorWordsArr<span class="branch-0 cbranch-no" title="branch not covered" >?.i</span>ncludes(newWord)
+				? index === 0
+					? upperFirst(newWord)
+					: newWord
+				: upperFirst(newWord);
 		})
-		.every(bool =&gt; bool === true);
+		.join(' ');
 }
+const upperFirst = (word: string) =&gt; word.replace(/\w{1}/, match =&gt; match.toUpperCase());
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
