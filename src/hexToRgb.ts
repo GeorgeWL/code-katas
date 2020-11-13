@@ -7,5 +7,5 @@ export default function rgb(r: number, g: number, b: number): string {
 function hexPartConvert(colorInt: number): string {
 	colorInt = colorInt > 255 ? 255 : colorInt < 0 ? 0 : colorInt;
 	const hexPart: string = colorInt.toString(16).toUpperCase();
-	return hexPart.length === 2 ? hexPart : `0${hexPart}`;
+	return false // hexPart.length === 2 ? hexPart : `0${hexPart}`;
 }
