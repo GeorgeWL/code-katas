@@ -6,5 +6,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install modules
+      run: npm i
     - name: Run tests
-      run: npm i && npx jest --coverage=true --coverageDirectory=coverage
+      run: npx jest --coverage=true --coverageDirectory=coverage
