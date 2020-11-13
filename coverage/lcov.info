@@ -1,5 +1,5 @@
 TN:
-SF:C:\Users\george\dev\personal\katas\src\findIntLocationsInArray.ts
+SF:/home/runner/work/code-katas/code-katas/src/findIntLocationsInArray.ts
 FN:2,findIntLocationsInArray
 FN:4,(anonymous_1)
 FNF:2
@@ -21,7 +21,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:C:\Users\george\dev\personal\katas\src\hexToRgb.ts
+SF:/home/runner/work/code-katas/code-katas/src/hexToRgb.ts
 FN:2,rgb
 FN:4,(anonymous_1)
 FN:7,hexPartConvert
@@ -48,7 +48,7 @@ BRF:6
 BRH:6
 end_of_record
 TN:
-SF:C:\Users\george\dev\personal\katas\src\isIsogram.ts
+SF:/home/runner/work/code-katas/code-katas/src/isIsogram.ts
 FN:2,isIsogram
 FN:9,(anonymous_1)
 FN:14,(anonymous_2)
@@ -70,7 +70,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\Users\george\dev\personal\katas\src\pokemonBattle.ts
+SF:/home/runner/work/code-katas/code-katas/src/pokemonBattle.ts
 FN:34,calculateDamage
 FNF:1
 FNH:1
@@ -93,7 +93,7 @@ BRF:4
 BRH:4
 end_of_record
 TN:
-SF:C:\Users\george\dev\personal\katas\src\titleCase.ts
+SF:/home/runner/work/code-katas/code-katas/src/titleCase.ts
 FN:2,titleCase
 FN:4,(anonymous_1)
 FN:6,(anonymous_2)
