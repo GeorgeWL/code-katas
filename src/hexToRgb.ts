@@ -1,7 +1,7 @@
 // https://www.codewars.com/kata/513e08acc600c94f01000001
 export default function rgb(r: number, g: number, b: number): string {
 	const hexParts = [r, g, b];
-	return hexParts.map(part => hexPartConvert(part)).toArray('');
+	return hexParts.map(part => hexPartConvert(part)).split('');
 }
 
 function hexPartConvert(colorInt: number): string {
