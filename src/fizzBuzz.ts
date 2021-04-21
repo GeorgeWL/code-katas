@@ -3,10 +3,10 @@
 export default function fizzBuzzer(maxCount = 100) {
     // add 1 to maxCount as javascript is zero-indexed
     for (let index = 1; index < maxCount+1; index++) {
-        const isThreeMult = isMultipleOfX(index, 3);
-        const isFiveMult = isMultipleOfX(index, 5);
-        const message = isThreeMult || isFiveMult ? `${isThreeMult ? 'Fizz' : ''}${isFiveMult ? 'Buzz' : ''}` : index;
-        console.log(message);
+        const isMultipleOfThree = isMultipleOfX(index, 3);
+        const isMultipleOfFive = isMultipleOfX(index, 5);
+        const response = isMultipleOfThree || isMultipleOfFive ? `${isMultipleOfThree ?? 'Fizz'}${isMultipleOfFive ?? 'Buzz'}` : index;
+        console.log(response);
     }
 }
 
