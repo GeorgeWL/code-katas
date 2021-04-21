@@ -5,7 +5,7 @@ export default function fizzBuzzer(maxCount = 100) {
     for (let index = 1; index < maxCount+1; index++) {
         const isMultipleOfThree = isMultipleOfX(index, 3);
         const isMultipleOfFive = isMultipleOfX(index, 5);
-        const response = isMultipleOfThree || isMultipleOfFive ? `${isMultipleOfThree ?? 'Fizz'}${isMultipleOfFive ?? 'Buzz'}` : index;
+        const response = isMultipleOfThree || isMultipleOfFive ? `${isMultipleOfThree ? 'Fizz':''}${isMultipleOfFive ? 'Buzz':''}` : index;
         console.log(response);
     }
 }
