@@ -1,4 +1,4 @@
-export default function replaceVisuallyIdentical(input: string): string {
+export function replaceVisuallyIdentical(input: string): string {
     const visuallyIdenticalMap: { [key: string]: string } = {
         'a': '𝗮',
         'b': '𝗯',
