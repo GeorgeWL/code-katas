@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1713177465547" clover="3.2.0">
-  <project timestamp="1713177465547" name="All files">
-    <metrics statements="35" coveredstatements="35" conditionals="24" coveredconditionals="23" methods="14" coveredmethods="14" elements="73" coveredelements="72" complexity="0" loc="35" ncloc="35" packages="1" files="5" classes="5"/>
+<coverage generated="1713177649177" clover="3.2.0">
+  <project timestamp="1713177649177" name="All files">
+    <metrics statements="44" coveredstatements="44" conditionals="26" coveredconditionals="25" methods="15" coveredmethods="15" elements="85" coveredelements="84" complexity="0" loc="44" ncloc="44" packages="1" files="6" classes="6"/>
     <file name="findIntLocationsInArray.ts" path="/home/runner/work/code-katas/code-katas/src/findIntLocationsInArray.ts">
       <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <line num="2" count="1" type="stmt"/>
@@ -51,6 +51,18 @@
       <line num="7" count="23" type="stmt"/>
       <line num="8" count="23" type="cond" truecount="5" falsecount="1"/>
       <line num="16" count="19" type="stmt"/>
+    </file>
+    <file name="visuallyIdenticalString.ts" path="/home/runner/work/code-katas/code-katas/src/visuallyIdenticalString.ts">
+      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="4" type="stmt"/>
+      <line num="57" count="4" type="stmt"/>
+      <line num="58" count="4" type="stmt"/>
+      <line num="59" count="35" type="cond" truecount="2" falsecount="0"/>
+      <line num="61" count="4" type="stmt"/>
+      <line num="65" count="1" type="stmt"/>
+      <line num="66" count="1" type="stmt"/>
+      <line num="67" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
