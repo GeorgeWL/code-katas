@@ -1,4 +1,4 @@
-function replaceVisuallyIdentical(input: string): string {
+export default function replaceVisuallyIdentical(input: string): string {
     const visuallyIdenticalMap: { [key: string]: string } = {
         'a': '𝗮',
         'b': '𝗯',
@@ -65,3 +65,4 @@ function replaceVisuallyIdentical(input: string): string {
 const inputString = 'Hello World';
 const visuallyIdenticalString = replaceVisuallyIdentical(inputString);
 console.log(visuallyIdenticalString); // Output: '𝗛𝗲𝗹𝗹𝗼 𝗪𝗼𝗿𝗹𝗱'
+
