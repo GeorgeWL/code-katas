@@ -1,4 +1,4 @@
-import replaceVisuallyIdentical from './visuallyIdenticalString';
+import { replaceVisuallyIdentical } from './visuallyIdenticalString';
 
 describe('replaceVisuallyIdentical', () => {
     it('replaces each letter with a visually identical symbol', () => {
